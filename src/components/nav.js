@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+
 
 function Nav() {
     return (
@@ -8,7 +8,9 @@ function Nav() {
                 <h2>MTN SURF</h2>
             </div>
             <div>
-                <p>Soon to be links</p>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     )
