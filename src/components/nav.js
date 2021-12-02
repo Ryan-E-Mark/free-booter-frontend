@@ -7,11 +7,11 @@ function Nav() {
             <div>
                 <h2>MTN SURF</h2>
             </div>
-            <div>
-                <a href="#products">Products</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     )
 }
