@@ -1,23 +1,30 @@
 .nav-bar {
     display: flex;
-
+    margin: 0;
 }
 
 .link-list {
     list-style: none;
+    text-decoration: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: 90%;
+    align-items: center;
+    margin-right: 2%;
+}
 
+li {
+    padding-left: 1.5%;
+    text-decoration: none;
 }
 
 #mtn-logo {
-    /* background-image: url("./components/imgs/mtn_srf.png"); */
+    background-image: url("./imgs/mtn_srf.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: start;
+    height: 10vh;
+    width: 10%;
 }
-
-#surf-logo {
-    width: 20%;
-    
-}
-  
