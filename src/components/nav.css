@@ -1,6 +1,7 @@
 .nav-bar {
     display: flex;
     margin: 0;
+    background-color: rgba(44, 39, 46, 0.2);
 }
 
 .link-list {
@@ -8,13 +9,14 @@
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
-    width: 90%;
+    width: 94%;
     align-items: center;
     margin-right: 2%;
 }
 
 a {
     text-decoration: none;
+    color: #54f363;
 }
 
 li {
@@ -30,6 +32,6 @@ li {
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
-    height: 10vh;
-    width: 10%;
+    height: 9vh;
+    width: 6%;
 }
