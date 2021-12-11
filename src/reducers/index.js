@@ -1,9 +1,9 @@
 import { FETCH_START, FETCH_SUCCESS, FETCH_FAIL } from "../actions";
 
 const initialState = {
-    product: [
+    product: {
 
-    ],
+    },
     fetching: false,
     error: ''
 }
@@ -13,7 +13,7 @@ const reducer = (state = initialState, action) => {
         case FETCH_START:
             return {
                 ...state,
-                product: [],
+                product: {},
                 fetching: true,
                 error: ''
             }
@@ -27,7 +27,7 @@ const reducer = (state = initialState, action) => {
         case FETCH_FAIL: 
             return {
                 ...state,
-                product: [],
+                product: {},
                 fetching: false,
                 error: action.payload
             }

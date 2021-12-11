@@ -1,8 +1,14 @@
 import React from 'react';
-import powsurf from '../video/justinsurf.mp4'
+import { useNavigate } from 'react-router-dom'
+import powsurf from '../video/justinsurf2.mp4'
 import './home.css'
 
 function Home() {
+    const navigate = useNavigate()
+
+    function handleClick() {
+        navigate('/products')
+    }
     return (
         <div className="home-div">
             <h1>Freebooter</h1>
@@ -10,9 +16,9 @@ function Home() {
             <div>
                 <p>Free your feet, free your soul</p>
             </div>   
-            <button>View our lineup</button>
+            <button onClick={handleClick}>View our lineup</button>
             <video src={powsurf} type="video/mp4" muted loop autoPlay/>
-      </div>
+        </div>
     )
 }
 
