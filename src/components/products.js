@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { fetchProducts } from '../actions/index';
 import { connect, useDispatch } from 'react-redux';
 
