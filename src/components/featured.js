@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 function FeaturedBoard(props) {
 
     return (
-        <section>
+        <section id="featured">
             <div>
                 <h3>Featured Board:</h3>
                 <p>Board information</p>

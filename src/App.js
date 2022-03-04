@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
 import Nav from './components/nav';
 import Home from './components/home';
 import Products from './components/products';
+import Footer from './components/footer';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" element={<Home/>} />
         <Route path="/products" element={<Products/>} />
       </Routes>
+        <Footer />
     </Router>
   );
 }
