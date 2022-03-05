@@ -1,16 +1,14 @@
 import React from "react";
 import { connect } from 'react-redux';
+import './featured.css';
 
 function FeaturedBoard(props) {
 
     return (
         <section id="featured">
-            <div>
-                <h3>Featured Board:</h3>
-                <p>Board information</p>
-            </div>
-            <div>
-                <p>eventually the board image</p>
+            <div className="text-box">
+                <h3>Featured Board: </h3>
+                <p>This board is sick, the gnarliest ripper you've ever seen. When the moon is full and the pow is just right, you can hear the howls of a local shredder absolutely getting after it on this board. Ride it, love it.</p>
             </div>
         </section>
     );
