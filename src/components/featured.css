@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12,9 +12,9 @@
 .text-box {
     background-color: black;
     margin-top: 20%;
-    border-top:1px solid #54f363;
-    border-bottom:1px solid #54f363;
-    border-right: 1px solid #54f363;
+    border-top:5px solid #54f363;
+    border-bottom:5px solid #54f363;
+    border-right: 5px solid #54f363;
     border-radius: 8px;
     padding: 5%;
     width: 45%;
