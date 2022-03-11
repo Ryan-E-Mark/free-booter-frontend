@@ -1,0 +1,13 @@
+.prod-card {
+    width: 25%;
+    padding: 2%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: ;
+    justify-content: flex-start;
+}
+
+.prodpic-div {
+    width: 50%;
+    
+}

@@ -1,41 +1,9 @@
 import React from 'react';
 import { fetchProducts } from '../actions/index';
 import { connect, useDispatch } from 'react-redux';
-
-const data = [
-    {
-    name: 'Slayer',
-    image: null,
-    size: null,
-    description: "the absolute best board ever",
-    type: 'board',
-    quantity: 1,
-},
-{
-    name: 'Slayer',
-    image: null,
-    size: null,
-    description: "the absolute best board ever",
-    type: 'board',
-    quantity: 1,
-},
-{
-    name: 'Slayer',
-    image: null,
-    size: null,
-    description: "the absolute best board ever",
-    type: 'board',
-    quantity: 1,
-},
-{
-    name: 'Slayer',
-    image: null,
-    size: null,
-    description: "the absolute best board ever",
-    type: 'board',
-    quantity: 1,
-},
-]
+import Sidebar from './sidebar';
+import "./product.css";
+import data from '../data';
 
 
 function Products(props) {
@@ -55,12 +23,17 @@ function Products(props) {
         <div>
             <button onClick={handleClick}>CLICK ME</button>
             {props.product.status === "success" ? <img src={props.product.message} alt="random dog"></img> : <span></span>}
+            <Sidebar />
             {data.map(prod => 
-                <div>
-                    <img src={prod.image} alt="product"></img>
-                    <h3>{prod.name}</h3>
-                    <p>{prod.size}</p>
-                    <p>{prod.description}</p>
+                <div className='prod-card'>
+                    <div className='prodpic-div'>
+                        <img className='prod-img' src={prod.image} alt="product"></img>
+                    </div>
+                    <div className='prodtext-div'>
+                        <h3 className='prod-name'>{prod.name}</h3>
+                        <p>{prod.size}</p>
+                        <p className='prod-desc'>{prod.description}</p>
+                    </div>                
                 </div>
                 )}
         </div>
