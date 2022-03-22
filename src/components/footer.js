@@ -1,7 +1,7 @@
 import React from 'react';
 import emailPic from './imgs/email.png';
 import insta from './imgs/instagram.png';
-import "./footer.css";
+import "./css/footer.css";
 
 const Footer = () => {
     return(

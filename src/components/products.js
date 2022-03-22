@@ -2,7 +2,7 @@ import React from 'react';
 import { fetchProducts } from '../actions/index';
 import { connect, useDispatch } from 'react-redux';
 import Sidebar from './sidebar';
-import "./product.css";
+import "./css/product.css";
 import data from '../data';
 
 

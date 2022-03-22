@@ -1,0 +1,22 @@
+.login-card {
+    width: 40%;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-text {
+    font-size: 1rem;
+    padding: ;
+}

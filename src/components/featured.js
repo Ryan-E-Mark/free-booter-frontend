@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux';
-import './featured.css';
+import './css/featured.css';
 
 function FeaturedBoard(props) {
 

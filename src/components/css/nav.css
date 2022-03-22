@@ -29,7 +29,7 @@ li {
 }
 
 #mtn-logo {
-    background-image: url("./imgs/mtn_srf.png");
+    background-image: url("../imgs/mtn_srf.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

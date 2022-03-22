@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'
 import powsurf from '../video/justinsurf2.mp4'
 import FeaturedBoard from "./featured";
-import './home.css'
+import './css/home.css'
 
 
 function Home() {

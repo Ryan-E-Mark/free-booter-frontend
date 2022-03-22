@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./css/login.css";
 
 let initialValues = {
     username: "",
@@ -23,31 +24,32 @@ const Login = () => {
     }
 
     return (
-        <div>
-            <h3>Login</h3>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Username: 
-                    <input
-                        type="text"
-                        name="username"
-                        value="username"
-                        onChange={handleChange}
-                    />
-                </label>
-                <label>
-                    password: 
-                    <input
-                        type="text"
-                        name="password"
-                        value="password"
-                        onChange={handleChange}
-
-                    />
-                </label>
-                <button>Login</button>
-            </form>
-        </div>
+        <section className="login-page">
+            <div className="login-card">
+                <h3>Login</h3>
+                <form onSubmit={handleSubmit}>
+                    <label className="login-text">
+                        Username: 
+                        <input
+                            type="text"
+                            name="username"
+                            placeholder="Enter your username..."
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label className="login-text">
+                        Password: 
+                        <input
+                            type="text"
+                            name="password"
+                            placeholder="Enter your password..."
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <button>Login</button>
+                </form>
+            </div>
+        </section>
     );
 }
 
