@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from 'react-redux';
 import './css/featured.css';
+import featured from "./imgs/Board.png";
 
 function FeaturedBoard(props) {
 
@@ -9,6 +10,9 @@ function FeaturedBoard(props) {
             <div className="text-box">
                 <h3>Featured Board: </h3>
                 <p>This board is sick, the gnarliest ripper you've ever seen. When the moon is full and the pow is just right, you can hear the howls of a local shredder absolutely getting after it on this board. Ride it, love it.</p>
+            </div>
+            <div className="board-div">
+                <img src={featured} alt="featured board"/>
             </div>
         </section>
     );

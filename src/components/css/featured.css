@@ -1,21 +1,16 @@
 #featured {
-    background-image: url('../imgs/BoardBackground.svg');
+    background-image: url('../imgs/BoardBackground.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 120vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
 }
 
 .text-box {
-    background-color: black;
     margin-top: 20%;
-    border-top:5px solid #54f363;
-    border-bottom:5px solid #54f363;
-    border-right: 5px solid #54f363;
-    border-radius: 8px;
     padding: 5%;
     width: 45%;
 }
@@ -23,3 +18,13 @@
 .text-box h3, p {
     color: white;
 } 
+
+.board-div {
+    position: absolute;
+    top: 130%;
+    right: 0;
+}
+
+#featured img {
+    width: 70%;
+}
