@@ -1,6 +1,10 @@
 #footer {
     width: 100%;
-    display: flex;
+    position: relative;
+    margin-top: -20vh;
+    /* negative value of footer height */
+    height: 20vh;
+    clear: both;
     justify-content: center;
     align-items: center;
     border-top: 1px solid black;

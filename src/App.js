@@ -6,6 +6,7 @@ import Home from './components/home';
 import Products from './components/products';
 import Footer from './components/footer';
 import Login from './components/login';
+import About from './components/about';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" element={<Home/>} />
         <Route path="/products" element={<Products/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/about" element={<About/>} />
       </Routes>
         <Footer />
     </Router>

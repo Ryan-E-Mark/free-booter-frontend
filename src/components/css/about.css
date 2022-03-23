@@ -1,0 +1,25 @@
+#about {
+    height: 150vh;
+}
+
+.about-div {
+    background-image: url('../imgs/surfin.jpg');
+    min-height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 8%;
+}
+
+.about-container {
+    margin-top: 5%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container p {
+    color: black;
+}
