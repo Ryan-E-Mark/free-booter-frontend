@@ -1,8 +1,8 @@
 .login-card {
     width: 40%;
+    height: 40vh;
     background-color: black;
     color: white;
-    border: 1px solid red;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
@@ -14,9 +14,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 86vh;
+}
+
+.login-page h3 {
+    padding: 1%;
+    font-size: 4rem;
+}
+
+.login-page input {
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 150%;
 }
 
 .login-text {
     font-size: 1rem;
-    padding: ;
+    margin: 3%;
+}
+
+.login-input {
+    padding: 2%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-div {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 5%;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: grey;
 }

@@ -27,27 +27,27 @@ const Login = () => {
         <section className="login-page">
             <div className="login-card">
                 <h3>Login</h3>
-                <form onSubmit={handleSubmit}>
-                    <label className="login-text">
-                        Username: 
-                        <input
-                            type="text"
-                            name="username"
-                            placeholder="Enter your username..."
-                            onChange={handleChange}
-                        />
-                    </label>
-                    <label className="login-text">
-                        Password: 
-                        <input
-                            type="text"
-                            name="password"
-                            placeholder="Enter your password..."
-                            onChange={handleChange}
-                        />
-                    </label>
-                    <button>Login</button>
-                </form>
+                    <form onSubmit={handleSubmit} className="login-input">
+                        <label className="login-text">
+                            Username 
+                            <input
+                                type="text"
+                                name="username"
+                                onChange={handleChange}
+                            />
+                        </label>
+                        <label className="login-text">
+                            Password 
+                            <input
+                                type="password"
+                                name="password"
+                                onChange={handleChange}
+                            />
+                        </label>
+                        <div className="btn-div">
+                            <button className="btn">Login</button>
+                        </div>
+                    </form>
             </div>
         </section>
     );
