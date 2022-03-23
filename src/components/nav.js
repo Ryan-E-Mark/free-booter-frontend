@@ -1,18 +1,20 @@
 import React from 'react';
+import mtnLogo from './imgs/mtn_srf.png';
 import './css/nav.css'
 import '../App.css'
 
 function Nav() {
     return (
-        <nav className="nav-bar">
-            <div id="mtn-logo"></div>
-            <ul className="link-list">
-                <li><a href="/">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        <section className='nav'>
+            <nav className="nav-bar">
+                <a href="/" className='mtn-a'><img src={mtnLogo} alt="logo" className='mtn-logo'/></a>
+                <ul className="link-list">
+                    <li><a href="/products" className='nav-a'>Products</a></li>
+                    <li><a href="/about" className='nav-a'>About</a></li>
+                    <li><a href="/contact" className='nav-a'>Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     )
 }
 

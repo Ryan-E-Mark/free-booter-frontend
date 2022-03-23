@@ -1,18 +1,26 @@
 .nav-bar {
-    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     top: 0;
     z-index: 2;
-    display: flex;
     margin: 0;
     background-color: rgba(124, 124, 124, 0.0);
+    width: 50%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
 }
 
 .link-list {
     list-style: none;
     text-decoration: none;
     display: flex;
-    justify-content: flex-end;
-    width: 95%;
+    justify-content: space-around;
+    width: 70%;
     align-items: center;
     margin-right: 2%;
 }
@@ -20,21 +28,35 @@
 a {
     text-decoration: none;
     color: #54f363;
+    position: relative;
+}
+
+.nav-a::after {
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .1rem;
+    left: 0;
+    transition: right .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-a:hover::after {
+    right: 0;
 }
 
 li {
-    padding-left: 1.5%;
+    padding-left: 3%;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    position: relative;
 }
 
-#mtn-logo {
-    background-image: url("../imgs/mtn_srf.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-start;
-    height: 7vh;
-    width: 5%;
+.mtn-logo {
+    width: 40%;
+}
+
+.mtn-a {
+    width: 30%;
 }
