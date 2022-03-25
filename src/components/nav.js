@@ -5,7 +5,7 @@ import '../App.css'
 
 function Nav() {
     return (
-        <section className='nav'>
+        <section id='nav'>
             <nav className="nav-bar">
                 <a href="/" className='mtn-a'><img src={mtnLogo} alt="logo" className='mtn-logo'/></a>
                 <ul className="link-list">

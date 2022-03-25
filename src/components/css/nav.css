@@ -10,7 +10,7 @@
     width: 50%;
 }
 
-.nav {
+#nav {
     display: flex;
     justify-content: center;
 }
@@ -32,14 +32,14 @@ a {
 }
 
 .nav-a::after {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #54f363;
     border-radius: 10px;
     content: "";
     position: absolute;
     right: 100%;
     bottom: .1rem;
     left: 0;
-    transition: right .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: right .5s cubic-bezier(0.1, 0.82, 0.165, 1);
 }
 
 .nav-a:hover::after {
