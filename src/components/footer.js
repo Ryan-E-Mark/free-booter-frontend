@@ -1,5 +1,5 @@
 import React from 'react';
-import emailPic from './imgs/email.png';
+// import emailPic from './imgs/email.png';
 import insta from './imgs/instagram.png';
 import "./css/footer.css";
 
