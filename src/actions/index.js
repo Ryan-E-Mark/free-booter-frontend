@@ -7,7 +7,7 @@ export const FETCH_FAIL = "FETCH_FAIL";
 export const fetchProducts = () => {
     return (dispatch => {
         dispatch(fetchStart());
-        axios.get('https://dog.ceo/api/breeds/image/random')
+        axios.get(`https://free-booter-backend.herokuapp.com/api/products`)
             .then(resp => {
                 dispatch(fetchSuccess(resp.data));
             })

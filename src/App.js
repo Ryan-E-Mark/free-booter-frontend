@@ -2,7 +2,8 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import reducer from './reducers';
 import Nav from './components/nav';
 import Home from './components/home';
@@ -11,7 +12,7 @@ import Footer from './components/footer';
 import Login from './components/login';
 import About from './components/about';
 
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(thunk));
 
 function App() {
   return (

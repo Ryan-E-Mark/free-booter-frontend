@@ -1,7 +1,7 @@
 const about = document.querySelector(".about-container");
 
 const options = {
-    root: null, // null means the viewport, default setting
+    root: null, // null means the viewport, default setting is null
     threshold: 0,
 };
 

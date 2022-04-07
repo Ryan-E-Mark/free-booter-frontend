@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { fetchProducts } from '../actions/index';
 import { connect, useDispatch } from 'react-redux';
 import Sidebar from './sidebar';
 import "./css/product.css";
-import data from '../data';
+
 
 
 function Products(props) {
@@ -12,30 +12,25 @@ function Products(props) {
     // console.log(props);
     // useEffect(() => {
     //     dispatch(fetchProducts())
-    //     // console.log(props.product)
-    // }, [props.product])
+    //     console.log(props.product)
+    // }, [])
 
     function handleClick() {
         dispatch(fetchProducts())
     }
+    
+    console.log(props.product);
 
     return (
         <div>
+            <div style={{height: "90vh"}}>
             <button onClick={handleClick}>CLICK ME</button>
-            {props.product.status === "success" ? <img src={props.product.message} alt="random dog"></img> : <span></span>}
+
+            </div>
+            {props.product.status === "success" ? 
+            <span></span>
+            : <span></span>}
             <Sidebar />
-            {data.map(prod => 
-                <div className='prod-card'>
-                    <div className='prodpic-div'>
-                        <img className='prod-img' src={prod.image} alt="product"></img>
-                    </div>
-                    <div className='prodtext-div'>
-                        <h3 className='prod-name'>{prod.name}</h3>
-                        <p>{prod.size}</p>
-                        <p className='prod-desc'>{prod.description}</p>
-                    </div>                
-                </div>
-                )}
         </div>
     )
 }
