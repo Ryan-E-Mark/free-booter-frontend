@@ -9,11 +9,11 @@ import "./css/product.css";
 function Products(props) {
     const dispatch = useDispatch()
 
-    // console.log(props);
-    // useEffect(() => {
-    //     dispatch(fetchProducts())
-    //     console.log(props.product)
-    // }, [])
+    console.log(props);
+    useEffect(() => {
+        dispatch(fetchProducts())
+        console.log(props.product)
+    }, [])
 
     function handleClick() {
         dispatch(fetchProducts())
