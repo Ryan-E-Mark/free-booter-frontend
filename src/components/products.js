@@ -2,33 +2,23 @@ import React, { useEffect } from 'react';
 import { fetchProducts } from '../actions/index';
 import { connect, useDispatch } from 'react-redux';
 import Sidebar from './sidebar';
+import ProductCard from './productCard';
 import "./css/product.css";
 
 
 
-function Products(props) {
+function Products({product}) {
     const dispatch = useDispatch()
 
-    console.log(props);
     useEffect(() => {
         dispatch(fetchProducts())
-        console.log(props.product)
     }, [])
-
-    function handleClick() {
-        dispatch(fetchProducts())
-    }
     
-    console.log(props.product);
-
+    console.log(product)
     return (
         <div>
-            <div style={{height: "90vh"}}>
-            <button onClick={handleClick}>CLICK ME</button>
-
-            </div>
-            {props.product.status === "success" ? 
-            <span></span>
+            {product.length ? 
+                <ProductCard/>
             : <span></span>}
             <Sidebar />
         </div>
@@ -37,8 +27,7 @@ function Products(props) {
 
 const mapStatetoProps = (state) => {
     return {
-        product: state.product,
-        fetching: state.fetching
+        product: state.product
     }
 }
 

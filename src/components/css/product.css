@@ -2,12 +2,8 @@
     width: 25%;
     padding: 2%;
     border: 1px solid red;
+    border-radius: 5px;
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
     justify-content: flex-start;
-}
-
-.prodpic-div {
-    width: 50%;
-    
 }
