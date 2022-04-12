@@ -1,9 +1,34 @@
+.product-section {
+    height: 100vh;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .prod-card {
-    width: 25%;
+    width: 20%;
     padding: 2%;
+    margin: 2%;
     border: 1px solid red;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.prod-title {
+    font-size: 1.25rem;
+}
+
+.prod-img {
+    width: 100%;
+}
+
+.prod-size {
+    color: black;
+}
+
+.prod-stock {
+    color: black;
 }
