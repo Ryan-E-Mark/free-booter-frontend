@@ -1,6 +1,7 @@
 import React from 'react';
 // import emailPic from './imgs/email.png';
 import insta from './imgs/instagram.png';
+import mtnLogo from './imgs/mtn_srf.png';
 import "./css/footer.css";
 
 const Footer = () => {
@@ -8,10 +9,11 @@ const Footer = () => {
         <footer id="footer">
             <ul className='footer-list'>
                 <li>
-                    <a href="https://www.instagram.com/freebooter.mtn.surf/" target="_blank" rel="noreferrer" className='footer-a'><img src={insta} alt="link to the Freebooter Instagram page" className='footer-img'/></a>
+                    <a href="/" className='mtn-a'><img src={mtnLogo} alt="logo" className='footer-logo'/></a>
                 </li>
-                <li>
-                    <a href="https://www.instagram.com/freebooter.mtn.surf/" target="_blank" rel="noreferrer" className='footer-a'><img src={insta} alt="link to the Freebooter Instagram page" className='footer-img'/></a>
+                <li className='socials-footer'>
+                    <p>FOLLOW US</p>
+                    <a href="https://www.instagram.com/freebooter.mtn.surf/" target="_blank" rel="noreferrer" className='footer-a'><img src={insta} alt="link to the Freebooter Instagram page" /></a>
                 </li>
             </ul>
         </footer>

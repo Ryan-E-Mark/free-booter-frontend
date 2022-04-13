@@ -1,15 +1,15 @@
 #footer {
-    background-color: white;
+    background-color: black;
     width: 100%;
     position: relative;
-    margin-top: -8vh;
+    bottom: 0;
     /* negative value of footer height */
-    height: 8vh;
+    height: 15vh;
     clear: both;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid black;
+    border-top: 1px solid #54f363;
 }
 
 .footer-list {
@@ -21,14 +21,29 @@
 
 }
 
-.footer-img {
-    width: 10%;
-
-}
-
 .footer-a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 25%;
 }
 
+.footer-a img {
+    width: 50%;
+}
+
+.footer-a img:hover {
+    transform: scale(110%);
+}
+
+.socials-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-logo {
+    width: 25%;
+}
