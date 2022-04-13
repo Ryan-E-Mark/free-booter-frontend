@@ -19,6 +19,8 @@
 
 .prod-title {
     font-size: 1.25rem;
+    padding-top: 5%;
+    border-top: 2px solid black;
 }
 
 .prod-img {

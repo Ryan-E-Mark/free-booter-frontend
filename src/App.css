@@ -38,6 +38,8 @@ body {
   font-size: 62.5%;
   font-family: 'Baloo Bhaijaan 2', cursive;
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
