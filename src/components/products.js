@@ -19,7 +19,10 @@ function Products({product}) {
         <div>
             {product.length ? 
                 <ProductCard/>
-            : <span></span>}
+            : 
+            <div className='loading'>
+               <h2>Loading..</h2> 
+            </div>}
             <Sidebar />
         </div>
     )

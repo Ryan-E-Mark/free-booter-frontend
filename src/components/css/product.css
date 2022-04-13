@@ -32,3 +32,8 @@
 .prod-stock {
     color: black;
 }
+
+.loading {
+    height: 100vh;
+    color: black;
+}
